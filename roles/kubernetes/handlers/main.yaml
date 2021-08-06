@@ -1,0 +1,4 @@
+---
+- name: install-kubernetes
+  shell: "/bin/sh /tmp/setup-kubetools-ubuntu.sh"
+  become: True

@@ -1,0 +1,11 @@
+---
+ansible_user: gcp-ansible-vms
+ansible_ssh_private_key_file: ~/.ssh/id_rsa_gcp_ansible
+
+server1: 35.246.171.42
+server2: 35.198.157.141
+
+ansible_python_interpreter: "/usr/bin/python3"
+ssh_known_hosts_command: "ssh-keyscan -T 10"
+ssh_known_hosts_file: "/etc/ssh/ssh_known_hosts"
+

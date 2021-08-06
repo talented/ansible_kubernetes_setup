@@ -1,0 +1,9 @@
+---
+ansible_user: gcp-ansible-vms
+# server1: ip1
+# server2: ip2
+
+# users:
+#   - name: gcp-ansible-vms
+#     authorized:
+#       - public_keys/firestarter.pub

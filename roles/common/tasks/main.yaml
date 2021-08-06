@@ -1,0 +1,12 @@
+---
+- name: Install basic software packages
+  apt:
+    name:
+      - npm
+
+- name: Install tldr with npm
+  npm:
+    name: tldr
+    global: yes
+
+

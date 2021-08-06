@@ -1,0 +1,6 @@
+[servers]
+server1	ansible_ssh_host={{server1}} ansible_ssh_user={{ansible_user}}
+server2	ansible_ssh_host={{server2}} ansible_ssh_user={{ansible_user}}
+
+[all:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'

@@ -1,0 +1,8 @@
+---
+- name: Setup of Server Applications
+  hosts: servers
+  become: True
+  roles:
+    # - common
+    - docker
+    - kubernetes

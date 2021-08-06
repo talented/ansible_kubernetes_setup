@@ -1,0 +1,16 @@
+---
+- name: Run Kubernetes setup script to hosts
+  copy: src="{{ item }}"
+        dest="/tmp/{{ item }}"
+        owner=root
+        group=root
+        mode=0744
+  with_items:
+    - setup-kubetools-ubuntu.sh
+  notify:
+    - install-kubernetes
+
+- name: Check the status of kubeadm kubectl kubelet services
+  shell: "kubectl"
+
+
